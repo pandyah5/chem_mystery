@@ -52,7 +52,7 @@ The database has the following classes:
   
 # Step by step workflow:
   
-### Step 1 - ATom recognition
+### Step 1 - Atom recognition
   The first step is to recognize the elementary atoms from the picture and store the atoms x and y corrdinates. This would require a letter recognition model that encircles the atom using the rectangle. The x and y coordinates are obtained by computing the midpoint of the box. We will do this using a custom fast compute ML model designed for this use case. We will first try to use a light mobilenet variant for transfer learning
   
 ### Step 2 - Bond recognition
