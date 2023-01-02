@@ -20,7 +20,7 @@ def preprocess_image(img):
     # of the rectangle to be detected.
     # A smaller value like (10, 10) will detect
     # each word instead of a sentence.
-    rect_kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (18, 18))
+    rect_kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (5, 5))
 
     # Applying dilation on the threshold image
     dilation = cv2.dilate(thresh1, rect_kernel, iterations = 1)
